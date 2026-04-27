@@ -1,30 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Privacy Policy - Target Lens AI</title>
-    <style>body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Lens AI - Privacy Policy</title>
+    <style>
+        :root {
+            --primary-red: #E31837;
+            --text-dark: #333;
+            --bg-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+        }
+
+        .title {
+            color: var(--primary-red);
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Content Section */
+        .content-wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: var(--primary-red);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .policy-item {
+            margin-bottom: 25px;
+        }
+
+        .policy-item strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Privacy Policy for Target Lens AI</h1>
-    <p><strong>Last Updated: April 27, 2026</strong></p>
-    
-    <h3>1. Information Collection</h3>
-    <p>Target Lens AI is a developer tool designed to debug Adobe Target implementations. The extension processes network request headers, cookies (such as mbox and Adobe Experience Cloud IDs), and XDM data payloads.</p>
-    
-    <h3>2. Data Usage</h3>
-    <p><strong>All data processing occurs locally on your machine.</strong> The extension does not collect, store, or transmit any personal or browsing data to external servers or the developer. The data is used solely to display real-time debugging information within the extension's interface.</p>
-    
-    <h3>3. Permissions Justification</h3>
-    <ul>
-        <li><strong>webRequest / declarativeNetRequest:</strong> Used to intercept and display Adobe Target delivery and interact calls.</li>
-        <li><strong>storage:</strong> Used to save your local extension settings and preferences.</li>
-        <li><strong>cookies:</strong> Used to display active mbox and visitor IDs for debugging purposes.</li>
-    </ul>
 
-    <h3>4. Third-Party Disclosure</h3>
-    <p>We do not sell, trade, or otherwise transfer your information to outside parties. We do not use any third-party tracking or analytics within the extension itself.</p>
+    <section class="hero">
+        <img src="https://prabhud2017.github.io/TargetLens/icon128.png" alt="Target Lens AI Logo" class="logo">
+        <h1 class="title">TARGET LENS AI</h1>
+    </section>
 
-    <h3>5. Contact</h3>
-    <p>If you have questions, please contact the developer via the GitHub repository issues page.</p>
+    <main class="content-wrapper">
+        <h2>Privacy Policy</h2>
+        <p class="last-updated">Last Updated: April 27, 2026</p>
+
+        <div class="policy-item">
+            <strong>1. Introduction</strong>
+            <p>Target Lens AI is a specialized developer tool built to assist in debugging Adobe Target implementations. We value your privacy and have designed this extension to be as transparent and secure as possible.</p>
+        </div>
+
+        <div class="policy-item">
+            <strong>2. Data Collection & Usage</strong>
+            <p>Target Lens AI <strong>does not collect, store, or transmit any personal data</strong> to external servers. All information intercepted (such as mbox calls, network request headers, and XDM payloads) is processed locally and in real-time on your device for the sole purpose of displaying debug information.</p>
+        </div>
+
+        <div class="policy-item">
+            <strong>3. Permissions Usage</strong>
+            <ul>
+                <li><strong>Web Request:</strong> To identify and parse Adobe Target network calls.</li>
+                <li><strong>Storage:</strong> To remember your preferred extension settings (e.g., UI theme or filters).</li>
+                <li><strong>Cookies:</strong> To display active visitor IDs and mbox cookies essential for troubleshooting activity delivery.</li>
+            </ul>
+        </div>
+
+        <div class="policy-item">
+            <strong>4. Security</strong>
+            <p>Because no data leaves your local environment, your Adobe Experience Cloud credentials and visitor data remain private within your browser session.</p>
+        </div>
+
+        <div class="policy-item">
+            <strong>5. Third-Party Services</strong>
+            <p>This extension does not use third-party analytics, tracking pixels, or advertising scripts.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Target Lens AI | Developed for the Adobe Community
+    </footer>
+
 </body>
 </html>
