@@ -1,131 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Target Lens AI - Privacy Policy</title>
-    <style>
-        :root {
-            --primary-red: #E31837;
-            --text-dark: #333;
-            --bg-light: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .logo {
-            width: 128px;
-            height: 128px;
-            margin-bottom: 20px;
-        }
-
-        .title {
-            color: var(--primary-red);
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Content Section */
-        .content-wrapper {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        h2 {
-            color: var(--primary-red);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 30px;
-        }
-
-        .last-updated {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-
-        .policy-item {
-            margin-bottom: 25px;
-        }
-
-        .policy-item strong {
-            display: block;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #999;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Target Lens AI Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Target Lens AI Chrome extension.">
+  <style>
+    .hero{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    }
+    .logo {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 20px;
+}
+    :root{
+      --bg:#0b1020;
+      --panel:#121a30;
+      --panel-2:#17203a;
+      --text:#e8edf7;
+      --muted:#FFF;
+      --line:#2a3557;
+      --accent:#7aa2ff;
+      --accent-2:#9dd6ff;
+      --ok:#8de1b5;
+      --warn:#ffd27a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font:16px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:#FFF;
+      color:var(--text);
+    }
+    .wrap{
+      max-width:960px;
+      margin:0 auto;
+      padding:40px 20px 64px;
+    }
+    .hero{
+      background:linear-gradient(180deg,rgba(122,162,255,.15),rgba(157,214,255,.06));
+      border:1px solid rgba(157,214,255,.18);
+      border-radius:20px;
+      padding:28px 24px;
+      margin-bottom:24px;
+      box-shadow:0 12px 40px rgba(0,0,0,.25);
+    }
+    h1,h2,h3{line-height:1.2;margin:0 0 14px}
+    h1{font-size:34px}
+    h2{
+      font-size:22px;
+      margin-top:32px;
+      padding-top:10px;
+      border-top:1px solid var(--line);
+    }
+    h3{font-size:18px;margin-top:20px}
+    p,li{color:var(--muted)}
+    strong{color:var(--text)}
+    a{color:var(--accent-2)}
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 16px;
+      margin-top:12px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .card{
+      background:#4f1011;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:24px;
+      margin-bottom:18px;
+    }
+    ul{padding-left:22px}
+    code{
+      background:#0a1226;
+      border:1px solid #273353;
+      border-radius:8px;
+      padding:1px 6px;
+      color:#dce7ff;
+    }
+    .note{
+      border-left:4px solid var(--warn);
+      background:rgba(255,210,122,.08);
+      padding:14px 16px;
+      border-radius:12px;
+      color:var(--text);
+      margin:14px 0 0;
+    }
+    .good{
+      border-left-color:var(--ok);
+      background:rgba(141,225,181,.08);
+    }
+    .footer{
+      margin-top:28px;
+      font-size:14px;
+      color:var(--muted);
+    }
+  </style>
 </head>
 <body>
-
-    <section class="hero">
+  <div class="wrap">
+    <section class="hero card">
         <img src="https://prabhud2017.github.io/TargetLens/icon128.png" alt="Target Lens AI Logo" class="logo">
         <h1 class="title">TARGET LENS AI</h1>
     </section>
+    <section class="hero card">
+      <h1>Privacy Policy for Target Lens AI</h1>
+    </section>
 
-    <main class="content-wrapper">
-        <h2>Privacy Policy</h2>
-        <p class="last-updated">Last Updated: April 27, 2026</p>
+    <section class="card">
+      <h2>1. Summary</h2>
+      <p>
+        Target Lens AI is a debugging and productivity extension for Adobe Target and related Adobe Experience Platform
+        Web SDK workflows. To provide that functionality, the extension may access information from the webpages you visit,
+        selected network requests made by those pages, and credentials or settings that you enter into the extension.
+      </p>
+      <p>
+        <strong>The extension does not sell your personal information, does not use your data for advertising,
+        and does not run a separate behavioral analytics or telemetry backend of its own.</strong>
+        However, if you choose to use optional AI or Adobe API features, the extension will send the information required
+        for those requested features directly to the relevant third-party or Adobe service.
+      </p>
+      <div class="note">
+        Because the extension runs on webpages you open, any personal or sensitive information present on those webpages
+        may be processed by the extension locally in your browser and may be included in requests you intentionally send
+        through optional AI or API features. Do not use the extension on pages or with data you are not authorized to inspect.
+      </div>
+    </section>
 
-        <div class="policy-item">
-            <strong>1. Introduction</strong>
-            <p>Target Lens AI is a specialized developer tool built to assist in debugging Adobe Target implementations. We value your privacy and have designed this extension to be as transparent and secure as possible.</p>
-        </div>
+    <section class="card">
+      <h2>2. Information the extension may process</h2>
 
-        <div class="policy-item">
-            <strong>2. Data Collection & Usage</strong>
-            <p>Target Lens AI <strong>does not collect, store, or transmit any personal data</strong> to external servers. All information intercepted (such as mbox calls, network request headers, and XDM payloads) is processed locally and in real-time on your device for the sole purpose of displaying debug information.</p>
-        </div>
+      <h3>A. Website and browsing data</h3>
+      <p>The extension may access and process information from webpages you visit, including:</p>
+      <ul>
+        <li>Page URL, page title, viewport size, and page structure.</li>
+        <li>HTML or a structured outline of the current page or selected page sections.</li>
+        <li>Visible text such as headings, buttons, calls to action, labels, and form-related content.</li>
+        <li>Element selectors, DOM structure, and layout information used for debugging or code generation.</li>
+        <li>Adobe Target / Web SDK / at.js related network request and response details visible in the browser.</li>
+        <li>Visitor identifiers or diagnostic values exposed on the page, such as ECID, Target IDs, activity metadata, or related response tokens.</li>
+      </ul>
 
-        <div class="policy-item">
-            <strong>3. Permissions Usage</strong>
-            <ul>
-                <li><strong>Web Request:</strong> To identify and parse Adobe Target network calls.</li>
-                <li><strong>Storage:</strong> To remember your preferred extension settings (e.g., UI theme or filters).</li>
-                <li><strong>Cookies:</strong> To display active visitor IDs and mbox cookies essential for troubleshooting activity delivery.</li>
-            </ul>
-        </div>
+      <h3>B. User-provided data</h3>
+      <p>If you enter information into the extension, it may process and store:</p>
+      <ul>
+        <li>API keys for AI providers such as OpenAI, Anthropic, or Google Gemini.</li>
+        <li>Adobe Target-related configuration values such as client code, IMS organization ID, client ID, bearer/access tokens, and profile API tokens.</li>
+        <li>Prompts, offer names, debugging settings, saved preferences, and generated code.</li>
+        <li>Optional images or attachments that you choose to provide to AI-assisted features.</li>
+      </ul>
 
-        <div class="policy-item">
-            <strong>4. Security</strong>
-            <p>Because no data leaves your local environment, your Adobe Experience Cloud credentials and visitor data remain private within your browser session.</p>
-        </div>
+      <h3>C. Sensitive categories</h3>
+      <p>
+        Depending on the webpage you use it on, the extension may process categories that Chrome Web Store treats as sensitive,
+        including <strong>authentication information</strong> (for example API keys, bearer tokens, and credentials you enter)
+        and <strong>web browsing activity</strong> (for example pages visited, page content, and related network activity needed
+        for the extension’s core functionality).
+      </p>
+    </section>
 
-        <div class="policy-item">
-            <strong>5. Third-Party Services</strong>
-            <p>This extension does not use third-party analytics, tracking pixels, or advertising scripts.</p>
-        </div>
-    </main>
+    <section class="card">
+      <h2>3. How the extension uses information</h2>
+      <ul>
+        <li>To detect Adobe Target, at.js, and Adobe Experience Platform Web SDK implementations on the page.</li>
+        <li>To display Target activities, offers, selectors, profile information, IDs, and relevant network calls.</li>
+        <li>To help you inspect, validate, copy, export, or generate Adobe Target-related code or offer content.</li>
+        <li>To save extension settings and keep your configured preferences available in your browser.</li>
+        <li>To connect to Adobe APIs you explicitly configure, such as Adobe Target Admin API or Adobe Target Profile API.</li>
+        <li>To send prompts and selected page context to the AI provider you choose, when you intentionally invoke AI-assisted features.</li>
+      </ul>
+    </section>
 
-    <footer>
-        &copy; 2026 Target Lens AI | Developed for the Adobe Community
-    </footer>
+    <section class="card">
+      <h2>4. When information is shared outside your browser</h2>
+      <p>
+        The extension shares information only when needed to perform a feature you choose to use. Depending on your configuration,
+        information may be sent directly from your browser to the following service providers:
+      </p>
+      <ul>
+        <li><strong>Adobe services</strong>, such as Adobe Target API endpoints and related Adobe MCP endpoints, when you configure and use Adobe integration features.</li>
+        <li><strong>OpenAI</strong>, if you configure an OpenAI API key and use OpenAI-powered features.</li>
+        <li><strong>Anthropic</strong>, if you configure an Anthropic API key and use Anthropic-powered features.</li>
+        <li><strong>Google Gemini</strong>, if you configure a Gemini API key and use Gemini-powered features.</li>
+      </ul>
+      <p>
+        The specific information sent depends on the feature you run, but may include prompts, page metadata, page structure,
+        selected page content, generated code requests, images you attach, and credentials required to authenticate the request.
+      </p>
+      <div class="note good">
+        The extension does <strong>not</strong> sell personal information, does <strong>not</strong> share data with data brokers,
+        and does <strong>not</strong> use accessed data for unrelated advertising or marketing.
+      </div>
+    </section>
 
+    <section class="card">
+      <h2>5. Local storage and retention</h2>
+      <p>
+        Target Lens AI stores settings and working data locally in your browser using Chrome extension storage
+        (for example <code>chrome.storage.local</code>) so the extension can function across browser sessions.
+      </p>
+      <ul>
+        <li>Saved settings may include API keys, tokens, client identifiers, preferences, and certain generated outputs.</li>
+        <li>Debugging data and cached records may be stored locally to support the current page, current tab, or recent extension actions.</li>
+        <li>Locally stored data remains until you change it, clear extension storage, or uninstall the extension, unless the extension overwrites or removes it earlier.</li>
+      </ul>
+      <p>
+        If you uninstall the extension, Chrome typically removes the extension’s local storage. You can also clear or replace saved values in the extension settings.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>6. Your choices</h2>
+      <ul>
+        <li>You can choose whether to enter API keys, tokens, or other credentials into the extension.</li>
+        <li>You can choose whether to use optional AI-powered features.</li>
+        <li>You can choose whether to use Adobe API integrations such as profile or admin API calls.</li>
+        <li>You can remove saved values by updating settings, clearing extension storage, or uninstalling the extension.</li>
+        <li>You can restrict or disable extension access through your browser’s extension permission controls.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>7. Data security</h2>
+      <p>
+        The extension is designed to keep most processing in your browser and to send data externally only when a requested feature requires it.
+        Still, no method of electronic storage or transmission is completely secure. You are responsible for protecting any credentials you enter
+        and for using the extension only in environments where you are authorized to inspect page content and network traffic.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Children’s privacy</h2>
+      <p>
+        This extension is not directed to children and is intended for users who are old enough to use browser extensions and related developer tools in their jurisdiction.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Changes to this Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time to reflect changes to the extension or to legal, operational, or Chrome Web Store requirements.
+        When this page is updated, the effective date at the top of this page will be revised.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>10. Contact</h2>
+      <p>
+        For support or privacy questions, please use the support contact or support URL provided in the Chrome Web Store listing for Target Lens AI,
+        or the contact method published by the developer on the extension’s website or repository.
+      </p>
+    </section>
+  </div>
 </body>
 </html>
